@@ -1,0 +1,51 @@
+name: 功能建议
+description: 建议新的体验、内容或设置能力
+title: "[Feature] "
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: 使用场景
+      description: 你在什么情况下遇到了什么需要？
+      placeholder: 例如：我想在分享卡片中保留更长的英文原文，但目前字号无法适配。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议方案
+      description: 描述你希望 Daily Quote 如何回应这个场景。
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: 相关区域
+      options:
+        - 今日
+        - 文集与搜索
+        - 收藏
+        - 分享卡片
+        - 个性化与设置
+        - 提醒
+        - 内容库
+        - 网站
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 理想结果
+      placeholder: 如果实现成功，你希望最终能完成什么？
+  - type: textarea
+    id: reference
+    attributes:
+      label: 参考资料
+      description: 可附截图、草图或参考产品链接，请勿包含个人敏感信息。
+  - type: checkboxes
+    id: local-first
+    attributes:
+      label: 产品原则
+      options:
+        - label: 我理解 Daily Quote 会优先选择克制、无账号、本地优先的实现方式。

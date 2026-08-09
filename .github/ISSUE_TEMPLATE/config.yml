@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Daily Quote 支持页面
+    url: https://dailyquote.microspotlight.team/support.html
+    about: 提交问题前可先查看常见问题与排查建议
+  - name: 隐私政策
+    url: https://dailyquote.microspotlight.team/privacy.html
+    about: 了解 Daily Quote 如何处理本地数据、通知与分享

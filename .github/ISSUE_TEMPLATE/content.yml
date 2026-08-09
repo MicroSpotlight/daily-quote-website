@@ -1,0 +1,43 @@
+name: 内容勘误
+description: 反馈语录原文、译文、作者或出处问题
+title: "[Content] "
+body:
+  - type: textarea
+    id: quote
+    attributes:
+      label: 语录内容
+      description: 请粘贴需要修订的句子，或附上所在页面的截图。
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: 问题类型
+      options:
+        - 原文错误
+        - 译文错误或不自然
+        - 作者错误
+        - 作品或出处错误
+        - 重复内容
+        - 版权或授权疑问
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: 建议修订
+      placeholder: 请写明建议的正确内容。
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 可靠来源
+      description: 请提供出版社、公共领域文本库或权威资料链接。
+      placeholder: https://
+  - type: textarea
+    id: notes
+    attributes:
+      label: 补充说明
+      description: 请勿提交个人敏感信息。
