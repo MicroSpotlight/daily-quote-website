@@ -8,4 +8,6 @@ Daily Quote 的公开产品、隐私政策与支持网站。
 - `privacy.html`：App Store 隐私政策 URL
 - `support.html`：App Store 支持 URL
 
+线上地址：<https://dailyquote.microspotlight.team>
+
 网站是无构建步骤的静态 HTML/CSS，可直接由 GitHub Pages 托管。
