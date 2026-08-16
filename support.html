@@ -29,11 +29,15 @@
     </section>
     <section>
       <h2>收藏和设置会同步到其他设备吗？</h2>
-      <p>当前版本不会。数据只保存在本机，这也是 Daily Quote 不需要账号、不收集个人数据的原因。</p>
+      <p>默认不会上传。句刻 Plus 用户可以在设置中主动开启 iCloud 私有同步，让收藏、偏好、阅读历史、手记、分享模板和专题进度通过 Apple 的 CloudKit 私有数据库同步；AI 深度解读不会进入 iCloud。若设备没有 iCloud 账号或服务受限，App 会继续使用本机数据。</p>
     </section>
     <section>
       <h2>如何删除我的数据？</h2>
-      <p>你可以在 App 中取消收藏、恢复设置。由于所有数据只保存在设备本地，删除 App 通常也会删除 Daily Quote 的本地数据。</p>
+      <p>你可以在 App 设置中导出或删除阅读档案、AI 解读和分享模板，也可以关闭 iCloud 私有同步并清除本机数据。删除 App 通常会一并删除本地数据；CloudKit 私有同步记录还会按 Apple 的 iCloud 数据规则保留或删除。</p>
+    </section>
+    <section>
+      <h2>AI 深度解读会发送什么？</h2>
+      <p>每次请求前都需要你明确同意。只会发送当前语录、语言和你主动输入的问题，经 Cloudflare AI Gateway 转发给 DeepSeek V4；不会发送手记、收藏或阅读历史。AI 解读只保存在本机，可以在设置中导出或删除。</p>
     </section>
     <section>
       <h2>如何反馈错误的作者或出处？</h2>
