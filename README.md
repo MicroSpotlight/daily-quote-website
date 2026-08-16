@@ -10,6 +10,7 @@ Daily Quote 的公开产品、隐私政策与支持网站。
 - `privacy.html`：App Store 隐私政策 URL
 - `support.html`：App Store 支持 URL
 - `.github/ISSUE_TEMPLATE/`：问题反馈、功能建议与内容勘误模板
+- `.well-known/apple-app-site-association`：把 `/quote/*`、`/q/*` 和 `/today` Universal Link 路由到句刻 App
 
 线上地址：<https://dailyquote.microspotlight.team>
 

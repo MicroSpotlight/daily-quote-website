@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "4QRC4C5SWY.team.MicroSpotlight.DailyQuote"
+        ],
+        "components": [
+          { "/": "/quote/*" },
+          { "/": "/q/*" },
+          { "/": "/today" }
+        ]
+      }
+    ]
+  }
+}
