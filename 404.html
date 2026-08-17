@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F7F2EA">
+  <meta name="description" content="在句刻中打开一段值得停留的阅读。">
+  <title>打开这句话 · Daily Quote</title>
+  <link rel="icon" href="/assets/app-icon.png">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body class="fallback-page">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="/" aria-label="Daily Quote 首页">
+        <img src="/assets/app-icon.png" alt="">
+        <span>Daily Quote</span>
+      </a>
+      <a class="site-nav__back" href="/">回到首页</a>
+    </div>
+  </header>
+
+  <main class="fallback" id="fallback" data-route="unknown">
+    <p class="eyebrow">A sentence for this moment</p>
+    <p class="fallback__mark" aria-hidden="true">句</p>
+    <h1 id="fallback-title">这句话，正在等你打开。</h1>
+    <p class="fallback__lead" id="fallback-description">如果你已安装句刻，请从分享链接返回 App；也可以先回到网站，继续了解这段每日阅读。</p>
+    <div class="fallback__actions">
+      <a class="button" id="open-app" href="/">在句刻中打开</a>
+      <a class="button button--quiet" href="/">回到首页</a>
+    </div>
+    <p class="fallback__meta" id="fallback-meta"></p>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 MicroSpotlight · Daily Quote</span>
+    <nav aria-label="页脚导航">
+      <a href="/privacy.html">隐私政策</a>
+      <a href="/support.html">支持</a>
+    </nav>
+  </footer>
+
+  <script>
+    (() => {
+      const path = window.location.pathname.replace(/\/+$/, '') || '/';
+      const quoteMatch = path.match(/^\/(?:quote|q)\/(dq-v\d+-\d+)$/);
+      const title = document.getElementById('fallback-title');
+      const description = document.getElementById('fallback-description');
+      const appLink = document.getElementById('open-app');
+      const meta = document.getElementById('fallback-meta');
+
+      if (quoteMatch) {
+        const quoteID = quoteMatch[1];
+        title.textContent = '把这句话，带回句刻。';
+        description.textContent = '这是一张来自句刻的分享卡片。安装 App 后，可以继续阅读原文、译文与出处。';
+        appLink.href = `dailyquote://quote/${quoteID}`;
+        meta.textContent = `分享语录 · ${quoteID}`;
+        document.getElementById('fallback').dataset.route = 'quote';
+      } else if (path === '/today') {
+        title.textContent = '今天，留一句给自己。';
+        description.textContent = '打开句刻，领取今天的一句话；如果尚未安装，也可以先从网站认识这份每日阅读。';
+        appLink.href = 'dailyquote://today';
+        meta.textContent = '今日阅读';
+        document.getElementById('fallback').dataset.route = 'today';
+      } else {
+        appLink.textContent = '打开 Daily Quote';
+        appLink.href = '/';
+        meta.textContent = '页面暂时离开了原来的位置';
+      }
+    })();
+  </script>
+</body>
+</html>
