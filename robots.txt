@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://dailyquote.microspotlight.team/sitemap.xml

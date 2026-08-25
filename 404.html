@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#F7F2EA">
   <meta name="description" content="在句刻中打开一段值得停留的阅读。">
-  <title>打开这句话 · Daily Quote</title>
+  <title>打开这句话 · 句刻</title>
   <link rel="icon" href="/assets/app-icon.png">
   <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body class="fallback-page">
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="brand" href="/" aria-label="Daily Quote 首页">
+      <a class="brand" href="/" aria-label="句刻首页">
         <img src="/assets/app-icon.png" alt="">
-        <span>Daily Quote</span>
+        <span class="brand__copy"><strong>句刻</strong><small>Daily Quote</small></span>
       </a>
       <a class="site-nav__back" href="/">回到首页</a>
     </div>
@@ -33,7 +33,7 @@
   </main>
 
   <footer class="site-footer">
-    <span>© 2026 MicroSpotlight · Daily Quote</span>
+    <span>© 2026 MicroSpotlight · 句刻</span>
     <nav aria-label="页脚导航">
       <a href="/privacy.html">隐私政策</a>
       <a href="/support.html">支持</a>
@@ -63,7 +63,7 @@
         meta.textContent = '今日阅读';
         document.getElementById('fallback').dataset.route = 'today';
       } else {
-        appLink.textContent = '打开 Daily Quote';
+        appLink.textContent = '打开句刻';
         appLink.href = '/';
         meta.textContent = '页面暂时离开了原来的位置';
       }

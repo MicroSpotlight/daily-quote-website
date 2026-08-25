@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://dailyquote.microspotlight.team/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://dailyquote.microspotlight.team/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dailyquote.microspotlight.team/en/" />
+  </url>
+  <url>
+    <loc>https://dailyquote.microspotlight.team/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://dailyquote.microspotlight.team/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dailyquote.microspotlight.team/en/privacy.html" />
+  </url>
+  <url>
+    <loc>https://dailyquote.microspotlight.team/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://dailyquote.microspotlight.team/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dailyquote.microspotlight.team/en/support.html" />
+  </url>
+  <url><loc>https://dailyquote.microspotlight.team/en/</loc></url>
+  <url><loc>https://dailyquote.microspotlight.team/en/privacy.html</loc></url>
+  <url><loc>https://dailyquote.microspotlight.team/en/support.html</loc></url>
+</urlset>
