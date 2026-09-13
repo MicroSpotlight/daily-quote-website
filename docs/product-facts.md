@@ -1,6 +1,6 @@
 # 句刻网站产品事实
 
-最后核验：2026-08-25
+最后核验：2026-09-13
 
 ## 发布状态
 
@@ -10,11 +10,15 @@
 - App Store ID：`6801580173`
 - Bundle ID：`team.MicroSpotlight.DailyQuote`
 - 当前版本：iOS 1.0
-- 当前状态：审核中（App Store Connect：`WAITING_FOR_REVIEW`）
-- 当前提交构建：Build 26
+- 当前状态：已在 App Store 公开上架（用户确认；Apple 美区公开查询返回版本 `1.0`）
+- 正式下载：[App Store 美区](https://apps.apple.com/us/app/daily-quote-%E5%8F%A5%E5%88%BB/id6801580173?uo=4)
+- 系统要求：iOS 17.0 或更高版本
+- 当前地区核验：美区公开查询返回该 App；中国区公开查询暂未返回结果，不能据此宣称中国区或所有地区可下载。
 - 正式网站：<https://dailyquote.microspotlight.team>
 
-在 Apple 审核通过并公开上架前，网站不得使用“立即下载”“现已上架”等可用性表述。审核通过后，应把首页状态和主要操作入口改为正式 App Store 下载链接。
+中英文首页、支持页与分享回退页均提供 Apple 公开查询返回的下载链接；下载可用性以用户 Apple 账户所在地区为准。此处记录已发布的 1.0，不将主仓后续开发功能自动视为已发布能力。
+
+核验依据：2026-09-13，Apple Lookup `https://itunes.apple.com/lookup?id=6801580173&country=us` 返回 `resultCount = 1`、`version = 1.0`、`minimumOsVersion = 17.0` 和上述 `trackViewUrl`；中国区查询返回 `resultCount = 0`。本机网页抓取被 Apple 重定向至中国区 Today 页面，因此下载链接采用公开查询返回值，未将 HTTP 200 单独当作详情页验证通过。
 
 ## 当前产品能力
 
@@ -33,4 +37,4 @@
 - Plus 当前实现：主仓 `docs/product/Plus订阅实现说明.md`
 - 隐私实践：本仓 `privacy.html` 与主仓 `ios/DailyQuote/PrivacyInfo.xcprivacy`
 
-这些来源发生冲突时，以 App Store Connect 的发布状态、当前 iOS 代码的数据行为及已提交审核材料为准。
+这些来源发生冲突时，以 App Store Connect 和公开商店的发布状态、已发布构建的数据行为及对应审核材料为准。

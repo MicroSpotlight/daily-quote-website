@@ -19,6 +19,8 @@
 
 线上地址：<https://dailyquote.microspotlight.team>
 
+iOS 1.0 已在 App Store 上架：[下载句刻](https://apps.apple.com/us/app/daily-quote-%E5%8F%A5%E5%88%BB/id6801580173?uo=4)。需要 iOS 17.0 或更高版本，下载可用性以 Apple 账户所在地区为准。
+
 网站是无构建步骤的静态 HTML/CSS，可直接由 GitHub Pages 托管。
 
 发布事实与品牌基线分别记录在 `docs/product-facts.md` 和 `docs/brand-spec.md`。Apple 审核状态变化后，应先更新产品事实，再调整首页状态或下载入口。
