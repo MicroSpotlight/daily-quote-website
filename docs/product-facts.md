@@ -16,7 +16,9 @@
 
 中英文首页、支持页与分享回退页均提供 Apple 公开查询返回的下载链接；下载可用性以用户 Apple 账户所在地区为准。此处记录已发布的 1.0，不将主仓后续开发功能自动视为已发布能力。
 
-V1.1（Build 51）已提交 App Store 审核，提交后核对状态为 `WAITING_FOR_REVIEW`，审核通过后自动发布；尚未视为公开上架。中英文首页和隐私政策已更新 RevenueCat 必需订阅服务、默认关闭的 Firebase 分析与崩溃诊断披露，ASC 隐私标签已同步发布。
+V1.1（Build 51）提审时核对状态为 `WAITING_FOR_REVIEW`，审核通过后自动发布；这是提审记录，不代表当前审核或上架状态。当时中英文首页和隐私政策披露 RevenueCat 必需订阅服务、默认关闭的 Firebase 分析与崩溃诊断，ASC 隐私标签已同步发布。
+
+V1.1.1 的中英文首页及隐私政策改为披露 Firebase 随 App 启动采集，并保留 V1.1 主动开启的版本区别；政策更新日期为 2026 年 10 月 31 日。网站披露不代表 V1.1.1 已上架，也不替代 App Store Connect 隐私标签复核。
 
 V1.0 核验依据：Apple Lookup `https://itunes.apple.com/lookup?id=6801580173&country=us` 返回 `resultCount = 1`、`version = 1.0`、`minimumOsVersion = 17.0` 和上述 `trackViewUrl`；中国区查询返回 `resultCount = 0`。下载链接采用公开查询返回值，未将网页重定向的 HTTP 200 单独当作详情页验证通过。
 
